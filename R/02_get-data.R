@@ -33,7 +33,7 @@ remDr$open(silent =FALSE)
 dat <- tibble()
 for (i in seq_along(url_acordos)) {
   ## Status
-  ui_info(paste0('Progress: ',i + 4066, ' of ',length(url_acordos)))
+  ui_info(paste0('Progress: ',i, ' of ',length(url_acordos)))
 
   ## Navigate to rul
   remDr$navigate(url_acordos[i])
