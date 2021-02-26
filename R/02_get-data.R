@@ -68,5 +68,5 @@ writexl::write_xlsx(dat, 'data/bilaterais_brasil.xlsx')
 remDr$close()
 
 ## Stoping and removing docker container
-rstudioapi::terminalExecute('docker stop r_selenium')
-rstudioapi::terminalExecute('docker container rm r_selenium')
+terminalExecute('docker stop r_selenium')
+terminalExecute('docker container rm r_selenium')
